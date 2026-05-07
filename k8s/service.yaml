@@ -1,11 +1,11 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: fareshare-backend-service
-  namespace: fareshare
+  name: realtime-chatapp-backend-service
+  namespace: realtime-chatapp
 spec:
   selector:
-    app: fareshare-backend
+    app: realtime-chatapp-backend
   type: ClusterIP
   ports:
     - protocol: TCP
