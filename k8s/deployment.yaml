@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: realtime-chatapp-backend
-          image: 023703348962.dkr.ecr.ap-south-1.amazonaws.com/realtime-chatapp-backend:bde240a0d41f4423af70ca4c7d19cf21be8364b1-1
+          image: 023703348962.dkr.ecr.ap-south-1.amazonaws.com/realtime-chatapp-backend:147e077cdae77fb72570e5f15c2369142e5d67c4-2
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
