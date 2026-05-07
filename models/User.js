@@ -1,16 +1,16 @@
 const mongoose = require('mongoose');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 const userSchema = mongoose.Schema({
   username: { type: String, required: true },
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true },
   bio: { type: String, default: "Hey there! I am using this chat app." },
-  profilePic: { 
-      type: String, 
-      default: function() {
-          return `https://robohash.org/${Math.random().toString(36).substring(7)}?set=set1&bgset=bg1&size=200x200`;
-      }
+  profilePic: {
+    type: String,
+    default: function () {
+      return `https://robohash.org/${Math.random().toString(36).substring(7)}?set=set1&bgset=bg1&size=200x200`;
+    }
   },
   status: { type: String, default: 'online' },
 }, { timestamps: true });
